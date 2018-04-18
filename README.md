@@ -20,7 +20,7 @@ Information on device is available here (https://figshare.com/articles/TaskContr
 3. Compile and download your code in uVision 5.
 
 ## DOI
-none yet
+[![DOI](https://zenodo.org/badge/107534575.svg)](https://zenodo.org/badge/latestdoi/107534575)
 
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning.
