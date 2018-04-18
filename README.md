@@ -26,8 +26,7 @@ none yet
 We use [SemVer](http://semver.org/) for versioning.
 
 ## Releases
-* Ver 1.0.0, 2017/09/20: The first release.
-* Pre-release, 2017/09/19.
+* Ver 1.0.0, 2018/04/18: The first release.
 
 ## Authors
 * **Yuichi Takeuchi PhD** - *Initial work* - [GitHub](https://github.com/yuichi-takeuchi)
