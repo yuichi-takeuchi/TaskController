@@ -1,58 +1,33 @@
-# TaskController1
-C++ codes for cue presentations and reward deliveries with STM microcomputers
-Information of practical circuits is available here (https://figshare.com/articles/FootshockCircuit/5421613).
+# TaskControllerCode
+C++ codes for auditory cue presentations and fluid reward deliveries with STM microcomputers.
+C1-C4.cpp are for control on buzzers and LEDs, solenoid valves, task cycles, and digitization of two analog external inputs, respectively.
+Information on device is available here (https://figshare.com/articles/TaskController/6154751).
 
 ## Getting Started
 
 ### Prerequisites
-* National Intruments Daq board (http://www.ni.com/data-acquisition/)
-* Matlab (https://www.mathworks.com/products/matlab.html)
-* Data Acquisition Toolbox (https://www.mathworks.com/products/daq.html)
-* Singal Processing Toolbox (https://www.mathworks.com/products/signal.html) (Optional: required only for stimf_CreateSquarePulses.m)
-
-The code has been tested with a USB-6212, Matlab ver 8.6 (R2015b), Data Acquisition Toolbox ver 3.5.2 (R2015b), and Signal Processing Toolbox ver 7.1 (R2015b).
-
-### Installing
-* Install Matlab, Data Acquisition Toolbox, and Driver (NI-DAQmx).
-* Connect your Ni Daq to your PC.
-* Give your Matlab pass to the m and fig files.
+* Microcomputer STM32L152RE (http://www.st.com/en/microcontrollers/stm32l152re.html)
 
 ### How to use
-* With GUI (NiDaqControlPanel)
-1. Launch Matlab.
-2. Launch NiDaqControlPanel as
-```
-guide NiDaqControlPanel.fig
-```
-and Run Figure (Ctrl+T).
-3. or Run NiDaqControlPanel.fig directly.
-```
-NiDaqControlPanel
-```
-4. Set channels (Analog inputs: AiX, Analog outputs: AoX, and Digital outputs: DoX), and parameters including sampling rate, timeout, latency on the control panel.
-5. If needed, set output analog waveform as stimulus wave by making it in the pseude command line in the control panel (edit10). Stimulation waves can be imported from workspace of Matlab by selecting it with popupmenu9. The output stimulus wave will be displayed on the axes2 (axis below on the panel).
-6. Select a function you want to launch from popupmenu10 in function group.
-7. Press Run button.
+* Online compile and downlowad
+1. Connect your Nucleo and PC with an USB cable.
+2. Compile the code and download binary file to your Nucleo directly via mbed webpage (https://os.mbed.com/compiler/).
 
-* Without GUI
-
-Functions with yf prefixes can work in stand-alone. It would be useful when multiple trials with differenct parameters needed to be automated. Several examples are given in NiDaqControlPanelDemo.m.
-
-## Help
-Use the help function as below.
-```
-help yfNiDaqAoBContDoConst
-```
+* Offline compile and download
+1. Install an offline developmental environment, Keil uVision 5 (http://www2.keil.com/mdk5/uvision/).
+2. Export mbed libraries as uVision project from mbed homepage.
+4. Connect your Nucleo and PC with an USB cable.
+3. Compile and download your code in uVision 5.
 
 ## DOI
-[![DOI](https://zenodo.org/badge/94625377.svg)](https://zenodo.org/badge/latestdoi/94625377)
+none yet
 
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning.
 
 ## Releases
-* Ver 1.1.0, 2017/07/18: Addition and modification of *Trig.m functions.
-* Ver 1.0.0, 2017/06/17: The first release.
+* Ver 1.0.0, 2017/09/20: The first release.
+* Pre-release, 2017/09/19.
 
 ## Authors
 * **Yuichi Takeuchi PhD** - *Initial work* - [GitHub](https://github.com/yuichi-takeuchi)
