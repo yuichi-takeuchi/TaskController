@@ -1,5 +1,5 @@
 # TaskControllerCode
-C++ codes for auditory cue presentations and fluid reward deliveries with STM microcomputers.
+C/C++ codes for auditory cue presentations and fluid reward deliveries with STM microcomputers.
 C1-C4.cpp are for control on buzzers and LEDs, solenoid valves, task cycles, and digitization of two analog external inputs, respectively.
 Information on device is available here (https://figshare.com/articles/TaskController/6154751).
 
@@ -31,7 +31,7 @@ We use [SemVer](http://semver.org/) for versioning.
 ## Authors
 * **Yuichi Takeuchi PhD** - *Initial work* - [GitHub](https://github.com/yuichi-takeuchi)
 * Affiliation: Department of Physiology, University of Szeged, Hungary
-* E-mail: yuichi-takeuchi@umin.net
+* E-mail: takeuchi.yuichi@med.u-szeged.hu
 
 ## License
 This project is licensed under the MIT License.
